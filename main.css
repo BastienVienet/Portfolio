@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', monospace;
+    font-size: 14px;
+    --navbar-color: #AB92BF;
+    --main-txt-color: #E2E2E2;
+}
