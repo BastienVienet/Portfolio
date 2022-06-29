@@ -2,9 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', monospace;
+    font-family: 'Fira Code Medium', monospace;
     font-size: 14px;
-    --background-color: #AD343E;
+    letter-spacing: 3px;
+    --oppacity : 0.3;
     --main-txt-color: #E2E2E2;
-    --navbar-background-color: #36393B;
+    --background-color: #36393B;
+    --typeWritterSpeed : 4s;
+    --typeWritterCharacters: 29;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-txt-color);
+    overflow-x: hidden;
 }
