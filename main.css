@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', monospace;
     font-size: 14px;
-    --navbar-color: #AB92BF;
+    --background-color: #AD343E;
     --main-txt-color: #E2E2E2;
+    --navbar-background-color: #36393B;
 }
