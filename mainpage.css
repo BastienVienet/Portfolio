@@ -1,0 +1,70 @@
+.main {
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    place-content: center;
+}
+
+.allTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4em;
+    position: relative;
+    width: max-content;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before {
+    background: var(--background-color);
+    animation: typeWritter var(--typeWritterSpeed) steps(var(--typeWritterCharacters)) 1s forwards;
+}
+
+h1::after {
+    width: 0.125em;
+    background: black;
+    animation: typeWritter var(--typeWritterSpeed) steps(var(--typeWritterCharacters)) 1s forwards,
+    blink 500ms steps(29) infinite;
+}
+
+@keyframes typeWritter {
+    to {
+        left: 100%;
+    }
+
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+
+}
+
+.subtitle {
+    font-size: 2em;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typeWritterSpeed) + 2s) forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
