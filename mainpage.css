@@ -1,71 +1,83 @@
 .main {
-    min-height: 92vh;
+    min-height: 84vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     place-content: center;
+    margin: 0 20px 0;
 }
 
-.allTitle {
+.mainFlex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.presentation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 60vw;
 }
 
 h1 {
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(2rem, 3vw, 5rem);
     position: relative;
     max-width: max-content;
     margin-bottom: 20px;
 }
 
-h1::before,
-h1::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-h1::before {
-    background: var(--background-color);
-    animation: typeWritter var(--typeWritterSpeed) steps(var(--typeWritterCharacters)) 1s forwards;
-}
-
-h1::after {
-    width: 0.125em;
-    background: black;
-    animation: typeWritter var(--typeWritterSpeed) steps(var(--typeWritterCharacters)) 1s forwards,
-    blink 500ms steps(29) infinite;
-}
-
-@keyframes typeWritter {
-    to {
-        left: 100%;
-    }
-
-}
-
-@keyframes blink {
-    to {
-        background: transparent;
-    }
-
-}
-
 .subtitle {
-    font-size: clamp(1.2rem, 3vw, 3rem);
-    opacity: 0;
-    transform: translateY(3rem);
-    animation: fadeInUp 2s ease calc(var(--typeWritterSpeed) + 2s) forwards;
+    font-size: clamp(1.2rem, 2vw, 3rem);
 }
 
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+.personalImage {
+    width: 25%;
+    height: auto;
+    background-color: #7d7d7d;
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+    rgba(0, 0, 0, 0.19);
+    transform: rotate(2deg);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    transform: rotate(1deg);
+}
+
+
+
+.focus-in {
+    animation: focus-in 1s cubic-bezier(.55, .085, .68, .53) both
+}
+
+
+@keyframes focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0
+    }
+    100% {
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .personalImage {
+        display: none;
+    }
+
+    .mainFlex {
+        justify-content: center;
+    }
+
+    body {
+        overflow: hidden;
     }
 }
