@@ -68,7 +68,8 @@ nav {
         right: 0;
         height: 92vh;
         top: 8vh;
-        width: 50%;
+        width: 100%;
+        z-index: 2;
         background-color: var(--background-color);
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
