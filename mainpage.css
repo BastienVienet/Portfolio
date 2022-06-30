@@ -14,9 +14,10 @@
 }
 
 h1 {
-    font-size: 4em;
+    font-size: clamp(2rem, 5vw, 5rem);
     position: relative;
-    width: max-content;
+    max-width: max-content;
+    margin-bottom: 20px;
 }
 
 h1::before,
@@ -56,7 +57,7 @@ h1::after {
 }
 
 .subtitle {
-    font-size: 2em;
+    font-size: clamp(1.2rem, 3vw, 3rem);
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2s ease calc(var(--typeWritterSpeed) + 2s) forwards;
