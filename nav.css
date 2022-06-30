@@ -14,7 +14,7 @@ nav {
 }
 
 .title_nav h3 {
-    font-size: 1.2em;
+    font-size: clamp(0.8rem, 1.5vw, 2rem);
 }
 
 /* The clickable links on the nav bar*/
@@ -40,7 +40,7 @@ nav {
     color: var(--main-txt-color);
     text-decoration: none;
     font-weight: bold;
-    font-size: 1em;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
 }
 
 /* The burger menu */
