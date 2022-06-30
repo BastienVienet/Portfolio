@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1"
@@ -7,6 +7,8 @@
     <link href="main.css" rel="stylesheet">
     <link href="nav.css" rel="stylesheet">
     <link href="mainpage.css" rel="stylesheet">
+    <link href="icons.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
     <title>Vienet Bastien | Portfolio</title>
     <script crossorigin="anonymous"
             src="https://kit.fontawesome.com/240835c993.js"></script>
@@ -20,7 +22,7 @@
     </div>
     <ul class="nav-links">
         <li>
-            <a href="#">Home</a>
+            <a href="index.html">Hello&#x1F44B</a>
         </li>
         <li>
             <a href="#">About</a>
@@ -38,13 +40,24 @@
         <div class="line3"></div>
     </div>
 </nav>
-<!--============================================== MAIN PAGE=========================================================-->
+<!--============================================== MAIN PAGE ========================================================-->
 <div class="main">
-    <div class="allTitle">
-        <h1>Hi, my name is Bastien Vienet</h1>
-        <p class="subtitle">Welcome to my portfolio! I am a web developer</p>
+    <div class="mainFlex">
+        <div class="presentation focus-in">
+            <h1>Hi, my name is Bastien Vienet</h1>
+            <p class="subtitle">Welcome to my portfolio! I am a web developer</p>
+        </div>
+        <div class="personalImage focus-in">
+            <img alt="Picture of my when we moved in, in Lausanne" src="images/profile.jpg">
+        </div>
     </div>
 </div>
+<!--============================================== FOOTER ===========================================================-->
+<footer>
+    <div class="footer">
+        <p>Tous droits réservés © Vienet Bastien | 2022</p>
+    </div>
+</footer>
 <script src="burgermenu.js"></script>
 </body>
 </html>
