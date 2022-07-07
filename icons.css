@@ -18,7 +18,7 @@
     font-size: 40px;
     color: #262626;
     line-height: 80px;
-    transition: .5s;
+    transition: 0.5s;
     padding-right: 14px;
 }
 
@@ -30,7 +30,7 @@
     top: 30px;
     color: #262626;
     letter-spacing: 4px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .presentation ul li a {
