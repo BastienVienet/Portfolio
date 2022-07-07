@@ -15,3 +15,12 @@ body {
     color: var(--main-txt-color);
     overflow-x: hidden;
 }
+
+.main {
+    min-height: 84vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    place-content: center;
+    margin: 0 20px 0;
+}
