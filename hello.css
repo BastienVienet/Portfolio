@@ -50,22 +50,6 @@ img {
     width: auto;
 }
 
-.focus-in {
-    animation: focus-in 1s cubic-bezier(.55, .085, .68, .53) both
-}
-
-
-@keyframes focus-in {
-    0% {
-        filter: blur(12px);
-        opacity: 0
-    }
-    100% {
-        filter: blur(0);
-        opacity: 1
-    }
-}
-
 @media screen and (max-width: 768px) {
 
     .personalImage {
