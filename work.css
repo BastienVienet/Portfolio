@@ -81,7 +81,6 @@
     text-decoration: none;
     color: var(--main-txt-color);
     background: var(--background-color);
-    transition: 0.5s;
 }
 
 .container .card .box .content a:hover {
