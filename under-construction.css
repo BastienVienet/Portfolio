@@ -1,0 +1,35 @@
+h2 {
+    font-size: clamp(1.5rem, 3vw, 4rem)
+}
+
+.container-progress {
+    position: relative;
+    margin: 100px 0;
+    width: 60vw;
+    height: 25px;
+    align-self: center;
+    background-color: black;
+    border-radius: 1.5em;
+}
+
+.container-progress .progress-bar {
+    position: absolute;
+    top: 0.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    height: 80%;
+    max-width: calc(100% - 1em);
+    background-color: var(--main-txt-color);
+    border-radius: 1.5em;
+    padding: 1em;
+    animation: progress-animation 5s linear forwards;
+}
+
+@keyframes progress-animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
