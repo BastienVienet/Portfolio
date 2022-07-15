@@ -20,7 +20,7 @@ h2 {
     background-color: var(--main-txt-color);
     border-radius: 1.5em;
     padding: 1em;
-    animation: progress-animation 5s linear forwards;
+    animation: progress-animation 4s linear forwards;
 }
 
 @keyframes progress-animation {

@@ -8,4 +8,4 @@ function incrementPercent() {
     }
 }
 
-setInterval(incrementPercent, 50);
+setInterval(incrementPercent, 40);
