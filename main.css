@@ -7,13 +7,15 @@
     letter-spacing: 3px;
     --oppacity: 0.3;
     --main-txt-color: #E2E2E2;
-    --background-color: #36393B;
+    --background-color: linear-gradient(135deg, #36393b, #4d0514);
 }
 
 body {
-    background-color: var(--background-color);
+    background: var(--background-color);
+    background-size: 400% 400%;
     color: var(--main-txt-color);
     overflow-x: hidden;
+    animation: background-animation 20s ease infinite;
 }
 
 .main {
@@ -51,5 +53,17 @@ h3 {
     100% {
         filter: blur(0);
         opacity: 1
+    }
+}
+
+@keyframes background-animation {
+    0% {
+        background-position: 0 2%
+    }
+    50% {
+        background-position: 100% 99%
+    }
+    100% {
+        background-position: 0 2%
     }
 }
