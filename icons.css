@@ -122,7 +122,7 @@
     background: #BB001B;
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1080px) {
 
     .presentation ul li a {
         width: 40px;
