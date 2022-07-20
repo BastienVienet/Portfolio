@@ -28,32 +28,21 @@ const navSlide = () => {
 // Calling the function
 navSlide();
 
-//Fixing bug of the slide when we switch from the desktop view to the mobile view
-//let x = window.matchMedia("(max-width: 800)")
-//const burger = document.querySelector('.burger');
+/* Fixing bug of the slide when we switch from the desktop view to the mobile view
+   Still in thinking progress because it breaks the animation afterwards
+   + Can't switch from mobile to desktop */
+const burger = document.querySelector('.burger');
 
-/*
-if (x.matches) {
-    burger.addEventListener('click', () => {
-        if (burger.classList.contains('toggle')) { */
-/* document.getElementsByClassName("nav-links").style.display = 'flex'; */
-/* let links = document.getElementsByClassName("nav-links")
-for (let link of links) {
-    link.style.display = 'flex'
-}
-} else { */
-/* document.getElementsByClassName("nav-links").style.display = 'none'; */
-/* let links = document.getElementsByClassName("nav-links")
-for (let link of links) {
-    link.style.display = 'none'
-}
-}
+burger.addEventListener('click', () => {
+    if (burger.classList.contains('toggle')) {
+        let links = document.getElementsByClassName('nav-links')
+        for (let link of links) {
+            link.style.display = 'flex'
+        }
+    } else {
+        let links = document.getElementsByClassName('nav-links')
+        for (let link of links) {
+            link.style.display = 'none'
+        }
+    }
 })
-} */
-
-//if (x.matches) {
-    //let links = document.getElementsByClassName("nav-links")
-    //for (let link of links) {
-      //  link.style.display = 'none'
-    //}
-//}
